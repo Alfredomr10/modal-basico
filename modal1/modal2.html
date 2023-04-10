@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Modal de ejemplo</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="modal2.js"></script>
+    <style>
+      #mi-modal {
+        display: none; /* Ocultar el modal al cargar la página */
+      }
+      #modal-boton {
+        margin-top: 20px;
+      }
+      #modal-boton:hover {
+        background-color: rgb(189, 40, 40);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mi-modal" title="Modal de ejemplo">
+      <p>Este es un modal más complicado.</p>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+      </form>
+    </div>
+    <div id="modal-boton">Abrir modal</div>
+  </body>
+</html>
